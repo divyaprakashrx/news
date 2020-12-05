@@ -1,44 +1,46 @@
-body{
-    font-family: "Roboto", Arial, Helvetica, sans-serif ;
-  }
-  .box{
-    min-height: 100px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
-    display: flex;
-    max-height: 260px;
-    width: 100%;
-    margin: 20px;
-  }
-  .card-wrap{
-    min-height: 150px;
+@use 'sass:math';
+
+$width: min(20vw, 180px);
+
+.box {
+  min-height: 100px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01),
+    0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
   display: flex;
-  padding:4px;
-  margin:20px;
-  width: 100%;
-  }
-  .image-box{
-    min-height: 100px;
-    max-width: 230px;
-    max-height: 230px;
-  }
-  img{
-    min-height: 100px;
-  max-width: 230px;
-  max-height: 250px;
-  }
-  .content{
-  display: block;
-  padding: 10px;
-  width:100%;
-  position: relative;
-  }
-  .date{
-    color: rgba(0, 0, 0, 0.38);
-    padding-right: 20px;
-  }
-  .main-subtitle{
-    line-height: 1.5em;
-    height:6em;
+  align-items: center;
+  justify-content: center;
+  width: min(80vw, 900px);
+  margin: 20px;
+  padding: 20px;
+  .image-box {
+    width: $width;
+    height: $width;
     overflow: hidden;
+    img {
+      width: $width;
+      height: 100%;
+    }
   }
+  .content {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    .title {
+      font-family: 'NotoSans';
+    }
+    .date {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      color: rgba(0, 0, 0, 0.38);
+      padding-right: 20px;
+    }
+    .main-subtitle {
+      line-height: 1.5em;
+      height: 3em;
+      overflow: hidden;
+    }
+  }
+}
