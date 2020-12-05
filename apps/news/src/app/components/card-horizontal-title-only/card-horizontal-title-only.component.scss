@@ -1,47 +1,42 @@
-body{
-    font-family: "Roboto", Arial, Helvetica, sans-serif ;
-  }
-  .box{
-    min-height: 100px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
-    display: flex;
-    max-height: 220px;
-    width: 100%;
-    margin: 20px;
-  }
-  .card-wrap{
-    min-height: 150px;
+@use 'sass:math';
+
+$width:min(20vw,100px);
+
+.box {
+  min-height: 100px;
+  margin: auto;
+  margin-left: 20%;
+  width: min(90vw,400px);
+  background: #ffffff;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01),
+    0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
   display: flex;
-  padding:4px;
-  margin:20px;
-  width: 100%;
+  max-height: 140px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+  .image-box {
+    width:$width;
+    height: $width;
+    overflow: hidden;
+    border-radius: 50%;
+    img {
+      width: $width;
+      height: 100%;
+    }
   }
-  .image-box{
-    min-height: 100px;
-    max-width: 200px;
-    max-height: 200px;
+  .content {
+    display: block;
+    padding: 10px;
+    width: 80%;
+    .date {
+      position: relative;
+      z-index: 2;
+      bottom: 0;
+      right: 0;
+      color: rgba(0, 0, 0, 0.38);
+      padding-right: 20px;
+    }
   }
-  .title{
-      padding-top: 35px;
-  }
-  img{
-    min-height: 100px;
-  max-width: 200px;
-  max-height: 200px;
-  }
-  .content{
-  display: block;
-  padding: 10px;
-  width:100%;
-  position: relative;
-  }
-  .date{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    color: rgba(0, 0, 0, 0.38);
-    padding-right: 20px;
-  }
- 
-  
+}

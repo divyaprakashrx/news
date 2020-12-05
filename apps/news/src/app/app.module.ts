@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,8 +17,25 @@ import { CardHorizontalTitleOnlyComponent } from './components/card-horizontal-t
 import { CardHorizontalGridComponent } from './components/card-horizontal-grid/card-horizontal-grid.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, CardHorizontalHomeComponent, CardHorizontalTitleOnlyComponent, CardHorizontalGridComponent],
-  imports: [BrowserModule, HttpClientModule,MatCardModule, BrowserAnimationsModule, LayoutModule, MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    CardHorizontalHomeComponent,
+    CardHorizontalTitleOnlyComponent,
+    CardHorizontalGridComponent,
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

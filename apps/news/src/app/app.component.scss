@@ -1,0 +1,13 @@
+.upper-row{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 200px;
+    align-items: center;
+    scrollbar-width: none;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+}
+.upper-row::-webkit-scrollbar{
+    display: none;
+}
