@@ -15,6 +15,7 @@ body{
 display: flex;
 padding:4px;
 margin:20px;
+width: 100%;
 }
 .image-box{
   min-height: 100px;
@@ -29,12 +30,18 @@ max-height: 200px;
 .content{
 display: block;
 padding: 10px;
+width:100%;
+position: relative;
 }
 .date{
-  float: right;
-  color: rgb(85, 85, 85);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.38);
   padding-right: 20px;
 }
-.main-subtitles{
-  max-liens: 2;
+.main-subtitle{
+  line-height: 1.5em;
+  height:3em;
+  overflow: hidden;
 }
