@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif ;
 }
 .box{
   min-height: 100px;
@@ -9,13 +8,13 @@ body{
   display: flex;
   max-height: 220px;
   width: 100%;
-  margin: 5px;
-  max-width: 1000px;
+  margin: 20px;
 }
 .card-wrap{
   min-height: 150px;
 display: flex;
 padding:4px;
+margin:20px;
 }
 .image-box{
   min-height: 100px;
@@ -37,5 +36,5 @@ padding: 10px;
   padding-right: 20px;
 }
 .main-subtitles{
-  max-lines: 2;
+  max-liens: 2;
 }
