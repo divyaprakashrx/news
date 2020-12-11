@@ -1,7 +1,15 @@
 <news-navbar>
     <mat-tab-group mat-align-tabs="center" style="margin-top: 2vh;margin-bottom:2vh;"
         (selectedTabChange)="onTabClick($event)">
-        <mat-tab *ngFor="let element of categories" label={{element}}></mat-tab>
+        <mat-tab *ngFor="let element of categories" label={{element}}>
+            <ng-template mat-tab-label>
+                <div class="container">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon><br>
+                    <span>{{element}}</span>
+                </div>
+            
+            </ng-template>
+        </mat-tab>
     </mat-tab-group>
     <div class="upper-row">
         <news-card-horizontal-title-only *ngFor="let element of Headlines.articles" [data]=element>
