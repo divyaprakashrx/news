@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {MatTabsModule} from '@angular/material/tabs';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +15,8 @@ import { MatListModule } from '@angular/material/list';
 import { CardHorizontalHomeComponent } from './components/card-horizontal-home/card-horizontal-home.component';
 import { CardHorizontalTitleOnlyComponent } from './components/card-horizontal-title-only/card-horizontal-title-only.component';
 import { CardHorizontalGridComponent } from './components/card-horizontal-grid/card-horizontal-grid.component';
+import { TabBarComponent } from './components/tab-bar/tab-bar.component';
+import { JumbotronComponent } from './components/jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,14 @@ import { CardHorizontalGridComponent } from './components/card-horizontal-grid/c
     CardHorizontalHomeComponent,
     CardHorizontalTitleOnlyComponent,
     CardHorizontalGridComponent,
+    TabBarComponent,
+    JumbotronComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     MatCardModule,
+    MatTabsModule,
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,
