@@ -1,33 +1,16 @@
 <news-navbar>
-    <news-tab-bar></news-tab-bar>
-    <news-jumbotron></news-jumbotron>
+    <mat-tab-group mat-align-tabs="center" style="margin-top: 2vh;margin-bottom:2vh;"
+        (selectedTabChange)="onTabClick($event)">
+        <mat-tab *ngFor="let element of categories" label={{element}}></mat-tab>
+    </mat-tab-group>
     <div class="upper-row">
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
-        <news-card-horizontal-title-only></news-card-horizontal-title-only>
+        <news-card-horizontal-title-only *ngFor="let element of Headlines.articles" [data]=element>
+        </news-card-horizontal-title-only>
     </div>
-    <news-card-horizontal-home></news-card-horizontal-home>
-    <news-card-horizontal-home></news-card-horizontal-home>
-    <news-card-horizontal-home></news-card-horizontal-home>
-    <news-card-horizontal-grid></news-card-horizontal-grid>
+    <!-- <news-jumbotron></news-jumbotron> -->
+
+    <news-card-horizontal-home *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-home>
+
+    <!-- <news-card-horizontal-grid></news-card-horizontal-grid> -->
 
 </news-navbar>

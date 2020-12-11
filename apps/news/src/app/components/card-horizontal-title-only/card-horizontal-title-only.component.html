@@ -1,8 +1,7 @@
 <div class="box">
-  <div class="image-box"><img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-      alt="Photo of a Shiba Inu"></div>
+  <div class="image-box"><img mat-card-image src={{data.urlToImage}} alt={{data.title}}></div>
   <div class="content">
-    <h3 class="title">Dog had a heart attack while walking</h3>
-    <p class="date">Date: 24-12-2019</p>
+    <h4 class="title">{{data.title}}</h4>
+    <p class="date">Date: {{data.publishedAt}}</p>
   </div>
 </div>
