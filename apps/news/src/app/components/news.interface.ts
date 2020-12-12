@@ -5,4 +5,5 @@ export interface NewsInterface{
   description:String;
   category:String;
   country:String;
+  image:String;
 }

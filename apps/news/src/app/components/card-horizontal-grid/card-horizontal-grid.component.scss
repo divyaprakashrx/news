@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-$width: min(20vw, 180px);
+$width: min(20vw, 100px);
 
 .box {
   min-height: 100px;
@@ -10,7 +10,9 @@ $width: min(20vw, 180px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: min(80vw, 900px);
+  width: 85%;
+  max-height: 140px;
+
   margin: 20px;
   padding: 20px;
   .image-box {
@@ -25,10 +27,11 @@ $width: min(20vw, 180px);
   .content {
     display: block;
     padding: 10px;
-    width: 80%;
+    width: 75%;
     position: relative;
     .title {
       font-family: 'NotoSans';
+      font-weight: 500;
     }
     .date {
       position: relative;

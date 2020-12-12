@@ -7,7 +7,7 @@
                     <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon><br>
                     <span>{{element}}</span>
                 </div>
-            
+
             </ng-template>
         </mat-tab>
     </mat-tab-group>
@@ -17,8 +17,13 @@
     </div>
     <!-- <news-jumbotron></news-jumbotron> -->
     <div class="main-news-section">
-    <news-card-horizontal-home class="left-grid" *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-home>
-
-    <news-card-horizontal-grid class="right-grid" *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-grid>
+        <div class="left-grid">
+            <news-card-horizontal-home *ngFor="let element of categoryNews.articles" [data]=element>
+            </news-card-horizontal-home>
+        </div>
+        <div class="right-grid">
+            <news-card-horizontal-grid *ngFor="let element of tech.articles" [data]=element>
+            </news-card-horizontal-grid>
+        </div>
     </div>
 </news-navbar>
