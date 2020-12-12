@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) {}
 
   private apiKey = '0dca06b2c93645b7a54e7db2242df51a';
-  private token = 'c819541c3aed22bd2bd23935bd319839';
+  private token = 'af478143a3dc16773eae52b73ba0d4ab';
   getHeadlines() {
 
     return this.http.get(
