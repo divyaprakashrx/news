@@ -38,7 +38,7 @@ h6 {
       0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
   }
   ::-webkit-scrollbar {
-    width: 12px;
+    width: 5px;
   }
 
   ::-webkit-scrollbar-track {
@@ -56,10 +56,12 @@ h6 {
   .container mat-icon {
     display: none;
   }
-  .left-grid {
-    width: 100%;
-  }
-  .right-grid {
-    display: none;
+  .main-news-section {
+    .left-grid {
+      width: 100%;
+    }
+    .right-grid {
+      display: none;
+    }
   }
 }
