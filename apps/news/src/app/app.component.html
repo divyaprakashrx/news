@@ -16,9 +16,9 @@
         </news-card-horizontal-title-only>
     </div>
     <!-- <news-jumbotron></news-jumbotron> -->
+    <div class="main-news-section">
+    <news-card-horizontal-home class="left-grid" *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-home>
 
-    <news-card-horizontal-home *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-home>
-
-    <!-- <news-card-horizontal-grid></news-card-horizontal-grid> -->
-
+    <news-card-horizontal-grid class="right-grid" *ngFor="let element of categoryNews.articles" [data]=element></news-card-horizontal-grid>
+    </div>
 </news-navbar>
