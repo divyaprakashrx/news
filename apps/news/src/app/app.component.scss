@@ -2,7 +2,7 @@
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 200px;
+  height: 120px;
   align-items: center;
   scrollbar-width: none;
   justify-content: space-between;
@@ -24,18 +24,17 @@ h6 {
   justify-content: space-evenly;
   .left-grid {
     width: 60%;
-    max-height: calc(95vh - 370px);
+    max-height: calc(110vh - 400px);
     overflow-y: scroll;
     scrollbar-width: thin;
   }
   .right-grid {
     width: 35%;
-    max-height: calc(95vh - 370px);
+    max-height: calc(110vh - 400px);
     overflow-y: scroll;
+    margin-left: 20px;
     scrollbar-width: none;
-    background: #ffffff;
-    box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01),
-      0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
+   
   }
   ::-webkit-scrollbar {
     width: 5px;

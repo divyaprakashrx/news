@@ -10,7 +10,7 @@ $width: min(20vw, 180px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 85%;
   margin: 20px;
   padding: 20px;
   .image-box {
@@ -29,12 +29,14 @@ $width: min(20vw, 180px);
     position: relative;
     .title {
       font-family: 'NotoSans';
+      font-weight: 900;
     }
     .date {
       position: relative;
       bottom: 0;
       right: 0;
-      color: rgba(0, 0, 0, 0.38);
+      font-size: small;
+      color: rgba(0, 0, 0, 0.28);
       padding-right: 20px;
     }
     .main-subtitle {

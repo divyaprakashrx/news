@@ -32,13 +32,17 @@ $width:min(20vw,100px);
     width: 80%;
     .title{
         font-family: "NotoSans";
+        font-weight: 900;
+        
+      color: rgba(0, 0, 0, 0.68);
     }
     .date {
       position: relative;
       z-index: 2;
       bottom: 0;
       right: 0;
-      color: rgba(0, 0, 0, 0.7);
+      font-size: small;
+      color: rgba(0, 0, 0, 0.28);
       padding-right: 20px;
     }
   }

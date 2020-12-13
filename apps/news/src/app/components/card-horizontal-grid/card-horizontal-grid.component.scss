@@ -3,14 +3,14 @@
 $width: min(20vw, 100px);
 
 .box {
-  min-height: 100px;
+  min-height: 80px;
   background: #ffffff;
   box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.01),
     0px 4px 8px rgba(0, 0, 0, 0.02), 0px 1px 12px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: 80%;
   max-height: 140px;
 
   margin: 20px;
@@ -31,14 +31,17 @@ $width: min(20vw, 100px);
     position: relative;
     .title {
       font-family: 'NotoSans';
-      font-weight: 500;
+      font-weight: 900;
+      color: rgba(0, 0, 0, 0.78);
+      color: black;
     }
     .date {
       position: relative;
       bottom: 0;
       right: 0;
-      color: rgba(0, 0, 0, 0.38);
+      color:rgba(0, 0, 0, 0.28);
       padding-right: 20px;
+      font-size: small;
     }
     .main-subtitle {
       line-height: 1.5em;
