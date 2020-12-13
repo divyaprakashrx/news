@@ -50,3 +50,13 @@ $width: min(20vw, 100px);
     }
   }
 }
+@media only screen and (min-width: 755px) and (max-width: 900px) {
+  .title{
+    font-size: 1.7vw;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1080px) {
+  .title{
+    font-size: 1.3vw;
+  }
+}

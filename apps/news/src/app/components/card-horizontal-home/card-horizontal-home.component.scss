@@ -30,6 +30,7 @@ $width: min(20vw, 180px);
     .title {
       font-family: 'NotoSans';
       font-weight: 900;
+      font-size: 1.7vw;
     }
     .date {
       position: relative;
@@ -44,5 +45,20 @@ $width: min(20vw, 180px);
       height: 3em;
       overflow: hidden;
     }
+  }
+}
+@media only screen and (max-width: 755px) {
+  .title{
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .title{
+    font-size: 4.1vw;
+  }
+}
+@media only screen and (max-width: 400px){
+  .title{
+    font-size: 5vw;
   }
 }
